@@ -5,8 +5,9 @@ const CanvasView = require("./CanvasView.es6");
 const Particle = require("./Particle.es6");
 const Enemy = require("./Enemy.es6");
 //const GameOver = require("./GameOver.es6");
-//const Highscore = require("./HighScore.es6");
+//const Highscore = require("./HighScore.es6t");
 let enemySpawn = false;
+
 
 
 class Controller {
