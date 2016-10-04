@@ -12,10 +12,17 @@ class Controller {
         this.part = [];
     }
     loop() {
-
+        this.canvas.clear();
         if (this.part.length <= 20) {
             this.part.push(new Particle());
+            console.log(this.part.length);
         }
+
+        this.part.forEach((p) => {
+            p.move();
+            this.canvas.draw(p.pos);
+            console.log(p);
+        });
 
         // de view moet doorgeven dat er is gedrukt is
         // zet de fuctie module aan
@@ -25,7 +32,7 @@ class Controller {
         console.log(this.part);
 
         this.mod.mov(this.key.key);
-        this.canvas.draw(this.part[0].pos);
+        
         this.canvas.draw(this.mod.pos);
         // krijg de coordinaten van de module
         // stuur de coordinaten door naar de view

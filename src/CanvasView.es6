@@ -3,8 +3,10 @@ class CanvasView {
         this.c = document.getElementById("myCanvas");
         this.ctx = this.c.getContext("2d");
     }
-    draw(pos) {
+    clear() {
         this.ctx.clearRect(0, 0, this.c.width, this.c.height);
+    }
+    draw(pos) {
         this.ctx.fillRect(pos.x, pos.y, pos.width, pos.height);
     }
 }
