@@ -5,7 +5,7 @@ class CanvasView{
     }
     draw(pos){
         this.ctx.clearRect(0, 0, this.c.width, this.c.height);
-        this.ctx.fillRect(pos.x,pos.y,10,10);
+        this.ctx.fillRect(pos.x,pos.y,20,20);
     }
 }
 

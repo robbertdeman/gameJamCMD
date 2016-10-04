@@ -10,6 +10,12 @@ class Module {
         else if (movement.right && !movement.left) {
             this.xPos += 10;
         }
+        else if (movement.up && !movement.down) {
+            this.yPos -= 10;
+        }
+        else if (movement.down && !movement.up) {
+            this.yPos += 10;
+        }
     }
 
     get pos() {
