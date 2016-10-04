@@ -6,11 +6,19 @@ class Particle {
         this.y = 50;
         this.xSpeed = (Math.random()*6)-3;
         this.ySpeed = 4;
+        this.isDead = false;
     }
 
     move() {
         this.y += this.ySpeed;
         this.x += this.xSpeed;
+    }
+
+    die() {
+        console.log(this.y);
+        if (this.y >= 500) {
+            this.isDead = true;
+        }
     }
 
     get posPart() {

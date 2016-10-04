@@ -13,26 +13,28 @@ class Controller {
     }
     loop() {
         this.canvas.clear();
+
+        // niet meer dan 20 particles
         if (this.part.length <= 20) {
             this.part.push(new Particle());
         }
 
+        // foreach voor elke particle
         this.part.forEach((p) => {
             p.move();
+            p.die();
             this.canvas.draw(p.posPart);
             this.mod.hit(p.posPart);
         });
 
-        // de view moet doorgeven dat er is gedrukt is
-        // zet de fuctie module aan
+        // filter de particles die niet meer bruikbaar zijn
+        this.part = this.part.filter (function(p) {
+            return p.isDead == false;
+        });
 
+        // waardes van de key worden doorgestuurd en de speler beweegt
         this.mod.mov(this.key.key);
-
         this.canvas.draw(this.mod.pos);
-
-
-        // krijg de coordinaten van de module
-        // stuur de coordinaten door naar de view
 
         // regelt de timing
         window.requestAnimationFrame(() => {
