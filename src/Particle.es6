@@ -3,7 +3,7 @@ class Particle {
         this.width = 10;
         this.height = 10;
         this.x = (Math.random()*300)-1;
-        this.y = 5;
+        this.y = 0;
         this.xSpeed = 0.2;
         this.ySpeed = 4;
         this.isDead = false;
