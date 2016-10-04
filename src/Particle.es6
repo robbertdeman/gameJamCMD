@@ -5,6 +5,7 @@ class Particle {
         this.x = x;
         this.y = y;
     }
+    
     get pos() {
         return {width: this.width, height: this.height, x: this.x, y: this.y};
     }
