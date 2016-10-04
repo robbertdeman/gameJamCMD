@@ -48,7 +48,6 @@ class Module {
                 this.life = this.life - 1;
                 this.color = "rgba(255,0,0,1)";
                 setTimeout(()=>{ this.color = "rgba(0,254,0,1)";}, 100);
-                console.log(this.life);
                 return true;
         }
         return false;
