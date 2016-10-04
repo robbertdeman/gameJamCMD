@@ -41,11 +41,13 @@ class Module {
 
     hit(particle){
         if (!particle) return;
-        if ((particle.x >= this.xPos)
+        if ((particle.x + particle.width >= this.xPos)
             && (particle.x <= this.xPos + this.width)
             && (particle.y >= this.yPos)
             && (particle.y <= this.yPos + this.height)) {
                 this.life = this.life - 1;
+                this.color = "rgba(255,0,0,1)";
+                setTimeout(()=>{ this.color = "rgba(0,255,0,1)";}, 100);
                 console.log(this.life);
                 return true;
         }

@@ -8,7 +8,6 @@ class CanvasView {
     }
 
     draw(pos) {
-        console.log(pos.color);
         this.ctx.fillStyle = pos.color;
         this.ctx.fillRect(pos.x, pos.y, pos.width, pos.height);
 
