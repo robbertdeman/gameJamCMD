@@ -15,12 +15,10 @@ class Controller {
         this.canvas.clear();
         if (this.part.length <= 20) {
             this.part.push(new Particle());
-            console.log(this.part.length);
         }
 
         this.part.forEach((p) => {
             p.move();
-            console.log(p.posPart);
             this.canvas.draw(p.posPart);
         });
 
