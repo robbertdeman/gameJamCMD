@@ -4,7 +4,7 @@ class Module {
         this.height = 20;
         this.xPos = 165;
         this.yPos = 449;
-        this.life = 5;
+        this.life = 10;
         this.color = "rgba(67,234,12,1)";
     }
     mov(movement) {
@@ -54,7 +54,7 @@ class Module {
     }
 
     get posMod() {
-        return {width: this.width, height: this.height, x: this.xPos, y: this.yPos, color: this.color};
+        return {width: this.width, height: this.height, x: this.xPos, y: this.yPos, color: this.color, life: this.life};
     }
 }
 
