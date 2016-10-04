@@ -22,7 +22,7 @@ class Controller {
 
         // console.log(this.canvas);
         // console.log(this.key);
-        console.log(this.part);
+        //console.log(this.part);
 
         this.mod.mov(this.key.key);
         this.canvas.draw(this.part[0].pos);
