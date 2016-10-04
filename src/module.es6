@@ -58,11 +58,9 @@ class Module {
         document.getElementById("score").innerHTML = "Levens: "+this.life;
     }
 
-    // bottom(enemy){
-    //     if (enemy.x =< 500){
-    //
-    //     }
-    // }
+    getLife() {
+        this.life += 3;
+    }
 
     get posMod() {
         return {width: this.width, height: this.height, x: this.xPos, y: this.yPos, color: this.color, life: this.life};

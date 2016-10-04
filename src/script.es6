@@ -32,6 +32,7 @@ class Controller {
             let died = this.mod.hit(e.posEnemy);
             if (died) {
                 e.isDead = true;
+                this.mod.getLife();
             }
         });
 

@@ -16,6 +16,7 @@ class Enemy {
     die() {
         if (this.y >= 500) {
             this.isDead = true;
+
         }
     }
 
