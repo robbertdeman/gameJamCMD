@@ -15,7 +15,6 @@ class Particle {
     }
 
     die() {
-        console.log(this.y);
         if (this.y >= 500) {
             this.isDead = true;
         }

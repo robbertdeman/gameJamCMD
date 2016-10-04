@@ -39,14 +39,15 @@ class Module {
     }
 
     hit(particle){
-        console.log(particle);
-        // if((particle.particlX >= this.xPos)
-        //     && (this.particlX <= this.xPos + this.width)
-        //     && (this.particlY >= this.yPos)
-        //     && (this.particlY <= this.yPos + this.height)) {
-        //     this.life = this.life - 1;
-        //     console.log(this.life);
-        // }
+        if (!particle) return;
+        if ((particle.x >= this.xPos)
+            && (particle.x <= this.xPos + this.width)
+            && (particle.y >= this.yPos)
+            && (particle.y <= this.yPos + this.height)) {
+                this.life = this.life - 1;
+                return false;
+                console.log(this.life);
+        }
     }
 
     get pos() {
