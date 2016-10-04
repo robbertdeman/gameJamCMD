@@ -21,19 +21,16 @@ class Controller {
         this.part.forEach((p) => {
             p.move();
             this.canvas.draw(p.pos);
-            console.log(p);
         });
 
         // de view moet doorgeven dat er is gedrukt is
         // zet de fuctie module aan
 
-        // console.log(this.canvas);
-        // console.log(this.key);
-        console.log(this.part);
-
         this.mod.mov(this.key.key);
-        
+
         this.canvas.draw(this.mod.pos);
+
+        this.mod.hit(this.part.posPart);
         // krijg de coordinaten van de module
         // stuur de coordinaten door naar de view
 

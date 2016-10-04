@@ -5,14 +5,14 @@ class Particle {
         this.x = 160;
         this.y = 50;
         this.xSpeed = (Math.random()*6)-3;
-        this.ySpeed = 0.2;
+        this.ySpeed = 4;
     }
     move() {
-        this.ySpeed += 0.05;
+        // this.ySpeed += 0.05;
         this.y += this.ySpeed;
         this.x += this.xSpeed;
     }
-    get pos() {
+    get posPart() {
         return {width: this.width, height: this.height, x: this.x, y: this.y};
     }
 }
