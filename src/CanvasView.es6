@@ -10,7 +10,6 @@ class CanvasView {
     draw(pos) {
         this.ctx.fillStyle = pos.color;
         this.ctx.fillRect(pos.x, pos.y, pos.width, pos.height);
-
     }
 }
 

@@ -43,8 +43,9 @@ class Module {
         if (!particle) return;
         if ((particle.x + particle.width >= this.xPos)
             && (particle.x <= this.xPos + this.width)
-            && (particle.y >= this.yPos)
-            && (particle.y <= this.yPos + this.height)) {
+            && (particle.y + particle.height >= this.yPos)
+            && (particle.y <= this.yPos + this.height)
+        ) {
                 this.life = this.life - 1;
                 this.color = "rgba(255,0,0,1)";
                 setTimeout(()=>{ this.color = "rgba(0,254,0,1)";}, 100);

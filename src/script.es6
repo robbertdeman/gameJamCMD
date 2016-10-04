@@ -4,8 +4,8 @@ const KeyView = require("./KeyView.es6");
 const CanvasView = require("./CanvasView.es6");
 const Particle = require("./Particle.es6");
 const Enemy = require("./Enemy.es6");
-const GameOver = require("./GameOver.es6");
-const Highscore = require("./HighScore.es6");
+//const GameOver = require("./GameOver.es6");
+//const Highscore = require("./HighScore.es6");
 let enemySpawn = false;
 
 class Controller {
@@ -28,6 +28,11 @@ class Controller {
             this.canvas.draw(e.posEnemy);
             e.move();
             e.die();
+            let died = this.mod.hit(e.posEnemy);
+            if (died) {
+                e.isDead = true;
+            }
+
         });
 
         this.enemy = this.enemy.filter (function(e) {
