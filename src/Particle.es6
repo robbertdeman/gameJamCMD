@@ -2,9 +2,9 @@ class Particle {
     constructor() {
         this.width = 10;
         this.height = 10;
-        this.x = 160;
-        this.y = 50;
-        this.xSpeed = (Math.random()*6)-3;
+        this.x = (Math.random()*300)-1;
+        this.y = 5;
+        this.xSpeed = 0.2;
         this.ySpeed = 4;
         this.isDead = false;
         this.color = "#ff0000";

@@ -53,7 +53,7 @@ class Module {
     }
 
     get posMod() {
-        return {width: this.width, height: this.height, x: this.xPos, y: this.yPos color: this.color};
+        return {width: this.width, height: this.height, x: this.xPos, y: this.yPos, color: this.color};
     }
 }
 
