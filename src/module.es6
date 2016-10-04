@@ -1,5 +1,7 @@
 class Module {
     constructor() {
+        this.width = 20;
+        this.height = 20;
         this.xPos = 0;
         this.yPos = 0;
     }
@@ -19,7 +21,7 @@ class Module {
     }
 
     get pos() {
-        return {x: this.xPos, y: this.yPos};
+        return {width: this.width, height: this.height, x: this.xPos, y: this.yPos};
     }
 }
 
