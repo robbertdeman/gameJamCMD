@@ -54,6 +54,10 @@ class Module {
         return false;
     }
 
+    score() {
+        document.getElementById("score").innerHTML = "Levens: "+this.life;
+    }
+
     // bottom(enemy){
     //     if (enemy.x =< 500){
     //
