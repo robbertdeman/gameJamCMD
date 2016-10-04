@@ -3,7 +3,7 @@ class Module {
         this.width = 20;
         this.height = 20;
         this.xPos = 165;
-        this.yPos = 450;
+        this.yPos = 449;
 
     }
     mov(movement) {
