@@ -5,18 +5,19 @@ class Module {
         this.xPos = 165;
         this.yPos = 449;
         this.life = 5;
+        this.color = "#FF0000";
     }
     mov(movement) {
         if(movement.left && !movement.right) {
             this.xPos -= 10;
         }
-        else if (movement.right && !movement.left) {
+        if (movement.right && !movement.left) {
             this.xPos += 10;
         }
-        else if (movement.up && !movement.down) {
+        if (movement.up && !movement.down) {
             this.yPos -= 10;
         }
-        else if (movement.down && !movement.up) {
+        if (movement.down && !movement.up) {
             this.yPos += 10;
         }
         this.outline();
@@ -27,13 +28,13 @@ class Module {
         if(this.xPos <= -10){
             this.xPos = this.xPos + 10; //linker lijn
     }
-        else if(this.yPos <= -10){
+        if(this.yPos <= -10){
             this.yPos = this.yPos + 10; //boven lijn
         }
         if(this.xPos >= 340){
             this.xPos = this.xPos - 10; //rechter lijn
         }
-        else if(this.yPos >= 481){
+        if(this.yPos >= 481){
             this.yPos = this.yPos - 10; //onder lijn
         }
     }
@@ -51,8 +52,8 @@ class Module {
         return false;
     }
 
-    get pos() {
-        return {width: this.width, height: this.height, x: this.xPos, y: this.yPos};
+    get posMod() {
+        return {width: this.width, height: this.height, x: this.xPos, y: this.yPos color: this.color};
     }
 }
 

@@ -4,6 +4,7 @@ class KeyView {
         this.right = false;
         this.up = false;
         this.down = false;
+        this.space = false;
 
         document.addEventListener("keydown", (keyBoardDown) => {
             if(keyBoardDown.keyCode == 39) {
@@ -17,6 +18,9 @@ class KeyView {
             }
             else if(keyBoardDown.keyCode == 40) {
                 this.down = true;
+            }
+            else if(keyBoardDown.keyCode == 32) {
+                this.space = true;
             }
         })
 
@@ -33,6 +37,9 @@ class KeyView {
             else if(keyBoardUp.keyCode == 40) {
                 this.down = false;
             }
+            else if(keyBoardUp.keyCode == 32) {
+                this.space = false;
+            }
         })
     }
 
@@ -41,7 +48,8 @@ class KeyView {
             left: this.left,
             right: this.right,
             up: this.up,
-            down: this.down
+            down: this.down,
+            space: this.space
         };
     }
 }
