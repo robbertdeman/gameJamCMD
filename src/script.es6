@@ -5,7 +5,6 @@ const CanvasView = require("./CanvasView.es6");
 const Particle = require("./Particle.es6");
 const Enemy = require("./Enemy.es6");
 // const GameOver = require("./GameOver.es6");
-// const Highscore = require("./HighScore.es6");
 let enemySpawn = false;
 
 
@@ -40,8 +39,8 @@ class Controller {
             return e.isDead == false;
         });
 
-        // niet meer dan 20 particles
-        if (this.part.length <= 20) {
+        // niet meer dan 30 particles
+        if (this.part.length <= 30) {
             this.part.push(new Particle());
         }
 
