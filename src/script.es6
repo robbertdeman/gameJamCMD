@@ -17,7 +17,6 @@ class Controller {
             this.part.push(new Particle());
         }
 
-
         // de view moet doorgeven dat er is gedrukt is
         // zet de fuctie module aan
 
