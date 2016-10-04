@@ -3,6 +3,7 @@ const Module = require("./module.es6");
 const KeyView = require("./KeyView.es6");
 const CanvasView = require("./CanvasView.es6");
 const Particle = require("./Particle.es6");
+const GameOver = require("./GameOver.es6");
 
 class Controller {
     constructor() {
@@ -43,8 +44,11 @@ class Controller {
         window.requestAnimationFrame(() => {
             this.loop();
         });
+
     }
 }
+
+
 
 const control = new Controller();
 control.loop();
