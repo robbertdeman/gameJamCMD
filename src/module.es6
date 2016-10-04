@@ -39,7 +39,7 @@ class Module {
     }
 
     hit(particle){
-        //console.log(particle);
+        console.log(particle);
         // if((particle.particlX >= this.xPos)
         //     && (this.particlX <= this.xPos + this.width)
         //     && (this.particlY >= this.yPos)

@@ -20,6 +20,7 @@ class Controller {
         this.part.forEach((p) => {
             p.move();
             this.canvas.draw(p.posPart);
+            this.mod.hit(p.posPart);
         });
 
         // de view moet doorgeven dat er is gedrukt is
@@ -29,7 +30,7 @@ class Controller {
 
         this.canvas.draw(this.mod.pos);
 
-        this.mod.hit(this.part.posPart);
+
         // krijg de coordinaten van de module
         // stuur de coordinaten door naar de view
 

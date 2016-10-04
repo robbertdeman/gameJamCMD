@@ -9,7 +9,6 @@ class Particle {
     }
 
     move() {
-        // this.ySpeed += 0.05;
         this.y += this.ySpeed;
         this.x += this.xSpeed;
     }
