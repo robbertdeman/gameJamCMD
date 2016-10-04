@@ -7,7 +7,7 @@ class Particle {
         this.xSpeed = 0.2;
         this.ySpeed = 4;
         this.isDead = false;
-        this.color = "#ff0000";
+        this.color = "rgba(23,44,56,1)";
     }
 
     move() {

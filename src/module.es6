@@ -5,7 +5,7 @@ class Module {
         this.xPos = 165;
         this.yPos = 449;
         this.life = 5;
-        this.color = "#FF0000";
+        this.color = "rgba(67,234,12,1)";
     }
     mov(movement) {
         if(movement.left && !movement.right) {
