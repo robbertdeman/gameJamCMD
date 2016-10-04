@@ -45,9 +45,10 @@ class Module {
             && (particle.y >= this.yPos)
             && (particle.y <= this.yPos + this.height)) {
                 this.life = this.life - 1;
-                return false;
                 console.log(this.life);
+                return true;
         }
+        return false;
     }
 
     get pos() {

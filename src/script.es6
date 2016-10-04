@@ -24,7 +24,10 @@ class Controller {
             p.move();
             p.die();
             this.canvas.draw(p.posPart);
-            this.mod.hit(p.posPart);
+            let died = this.mod.hit(p.posPart);
+            if (died) {
+                p.isDead = true;
+            }
         });
 
         // filter de particles die niet meer bruikbaar zijn
