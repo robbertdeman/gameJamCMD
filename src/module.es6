@@ -54,6 +54,12 @@ class Module {
         return false;
     }
 
+    // bottom(enemy){
+    //     if (enemy.x =< 500){
+    //
+    //     }
+    // }
+
     get posMod() {
         return {width: this.width, height: this.height, x: this.xPos, y: this.yPos, color: this.color, life: this.life};
     }

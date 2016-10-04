@@ -19,7 +19,6 @@ class Enemy {
         }
     }
 
-
     get posEnemy() {
         return {width: this.width, height: this.height, x: this.x, y: this.y, color: this.color};
     }

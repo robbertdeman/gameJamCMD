@@ -8,6 +8,7 @@ const Enemy = require("./Enemy.es6");
 //const Highscore = require("./HighScore.es6");
 let enemySpawn = false;
 
+
 class Controller {
     constructor() {
         this.mod = new Module();
