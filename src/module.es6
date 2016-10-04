@@ -2,7 +2,7 @@ class Module {
     constructor() {
         this.width = 20;
         this.height = 20;
-        this.xPos = 164;
+        this.xPos = 165;
         this.yPos = 449;
         this.life = 5;
         this.color = "rgba(67,234,12,1)";
