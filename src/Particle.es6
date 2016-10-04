@@ -1,9 +1,9 @@
 class Particle {
-    constructor(x, y) {
+    constructor() {
         this.width = 15;
         this.height = 15;
-        this.x = x;
-        this.y = y;
+        this.x = 50;
+        this.y = 50;
     }
 
     get pos() {

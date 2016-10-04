@@ -1,4 +1,4 @@
-class CanvasView{
+class CanvasView {
     constructor() {
         this.c = document.getElementById("myCanvas");
         this.ctx = this.c.getContext("2d");
