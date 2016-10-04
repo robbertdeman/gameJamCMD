@@ -8,7 +8,7 @@ class CanvasView {
     }
 
     draw(pos) {
-        this.ctx.fillRect(pos.x, pos.y, pos.width, pos.height);
+        this.ctx.fillRect(pos.color, pos.x, pos.y, pos.width, pos.height);
     }
 }
 

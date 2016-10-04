@@ -37,7 +37,7 @@ class Controller {
 
         // waardes van de key worden doorgestuurd en de speler beweegt
         this.mod.mov(this.key.key);
-        this.canvas.draw(this.mod.pos);
+        this.canvas.draw(this.mod.posMod);
 
         // regelt de timing
         window.requestAnimationFrame(() => {

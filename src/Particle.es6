@@ -7,6 +7,7 @@ class Particle {
         this.xSpeed = (Math.random()*6)-3;
         this.ySpeed = 4;
         this.isDead = false;
+        this.color = "#ff0000";
     }
 
     move() {
@@ -21,7 +22,7 @@ class Particle {
     }
 
     get posPart() {
-        return {width: this.width, height: this.height, x: this.x, y: this.y};
+        return {width: this.width, height: this.height, x: this.x, y: this.y, color: this.color};
     }
 }
 
