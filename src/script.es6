@@ -29,7 +29,7 @@ class Controller {
 
         this.canvas.draw(this.mod.pos);
 
-        // this.mod.hit(this.part.posPart);
+        this.mod.hit(this.part.posPart);
         // krijg de coordinaten van de module
         // stuur de coordinaten door naar de view
 

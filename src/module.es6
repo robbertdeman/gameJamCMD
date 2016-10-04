@@ -4,7 +4,7 @@ class Module {
         this.height = 20;
         this.xPos = 165;
         this.yPos = 449;
-
+        this.life = 5;
     }
     mov(movement) {
         if(movement.left && !movement.right) {
@@ -20,23 +20,34 @@ class Module {
             this.yPos += 10;
         }
         this.outline();
+        this.hit();
     }
 
     outline(){
         if(this.xPos <= -10){
             this.xPos = this.xPos + 10; //linker lijn
     }
-        else if(this.yPos == -10){
+        else if(this.yPos <= -10){
             this.yPos = this.yPos + 10; //boven lijn
         }
         if(this.xPos >= 340){
             this.xPos = this.xPos - 10; //rechter lijn
         }
-        else if(this.yPos ==490){
+        else if(this.yPos >= 481){
             this.yPos = this.yPos - 10; //onder lijn
-        }console.log(this.yPos);
+        }
     }
 
+    hit(particle){
+        //console.log(particle);
+        // if((particle.particlX >= this.xPos)
+        //     && (this.particlX <= this.xPos + this.width)
+        //     && (this.particlY >= this.yPos)
+        //     && (this.particlY <= this.yPos + this.height)) {
+        //     this.life = this.life - 1;
+        //     console.log(this.life);
+        // }
+    }
 
     get pos() {
         return {width: this.width, height: this.height, x: this.xPos, y: this.yPos};
